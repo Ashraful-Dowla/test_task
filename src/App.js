@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./Components/Sidebar";
+
+import Login from "./Pages/Auth/Login";
+
+import Sector from "./Pages/Sector";
+import SectorCreate from "./Pages/Sector/Create";
+import SectorEdit from "./Pages/Sector/Edit";
+import ProtectedRoute from "./Routes/ProtectedRoute";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Login />} />
+      <Route
+        path="/dashboard"
+        exact
+        element={
+          <ProtectedRoute>
+            <Sidebar>
+              <Sector />
+            </Sidebar>
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/create"
+        exact
+        element={
+          <ProtectedRoute>
+            <Sidebar>
+              <SectorCreate />
+            </Sidebar>
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/edit/:id"
+        exact
+        element={
+          <ProtectedRoute>
+            <Sidebar>
+              <SectorEdit />
+            </Sidebar>
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
   );
 }
 

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Manufacturing",
+    "children": [
+      {
+        "id": 19,
+        "title": "Construction materials",
+        "children": []
+      },
+      {
+        "id": 18,
+        "title": "Electronics and Optics",
+        "children": []
+      },
+      {
+        "id": 6,
+        "title": "Food and Beverage",
+        "children": [
+          {
+            "id": 342,
+            "title": "Bakery &amp; confectionery products",
+            "children": []
+          },
+          {
+            "id": 43,
+            "title": "Bakery &amp; confectionery products",
+            "children": []
+          },
+          {
+            "id": 42,
+            "title": "Meat &amp; meat products",
+            "children": []
+          },
+          {
+            "id": 39,
+            "title": "Milk &amp; dairy products",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Other",
+    "children": [
+      {
+        "id": 37,
+        "title": "Creative industries",
+        "children": []
+      },
+      {
+        "id": 29,
+        "title": "Energy technology",
+        "children": []
+      },
+      {
+        "id": 33,
+        "title": "Environment",
+        "children": []
+      }
+    ]
+  }
+]

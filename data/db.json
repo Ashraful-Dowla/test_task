@@ -1,0 +1,60 @@
+{
+  "login": [
+    {
+      "name": "Ashraf",
+      "email": "ashraf@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "Bruno",
+      "email": "bruno@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "list": [
+    {
+      "name": "sdad",
+      "sector": [
+        "2",
+        "1"
+      ],
+      "terms_agreed": true,
+      "id": 1
+    },
+    {
+      "name": "asddsadsad",
+      "sector": [
+        "2"
+      ],
+      "terms_agreed": true,
+      "id": 2
+    },
+    {
+      "name": "sadsad",
+      "sector": [
+        "1"
+      ],
+      "terms_agreed": true,
+      "id": 3
+    },
+    {
+      "name": "sdsad",
+      "sector": [
+        "1"
+      ],
+      "id": 5
+    },
+    {
+      "name": "sadsadasdsdsd",
+      "sector": [
+        "0-0-1",
+        "0-1",
+        "0-1-0",
+        "0-1-1",
+        "0-1-2"
+      ],
+      "terms_agreed": true,
+      "id": 6
+    }
+  ]
+}
