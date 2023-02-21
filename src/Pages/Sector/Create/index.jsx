@@ -26,9 +26,11 @@ const Create = () => {
   const [form] = Form.useForm();
 
   const [sector, setSector] = useState([]);
+  const userData = JSON.parse(localStorage.getItem("userData"));
 
   const onSubmit = async (fieldsValue) => {
     fieldsValue.sector = sector;
+    fieldsValue.user_id = userData.id;
 
     api
       .post("/list", fieldsValue)

@@ -1,11 +1,13 @@
 {
-  "login": [
+  "user": [
     {
+      "id": 1,
       "name": "Ashraf",
       "email": "ashraf@gmail.com",
       "password": "123456"
     },
     {
+      "id": 2,
       "name": "Bruno",
       "email": "bruno@gmail.com",
       "password": "123456"
@@ -13,48 +15,65 @@
   ],
   "list": [
     {
-      "name": "sdad",
+      "name": "asdasd",
       "sector": [
-        "2",
-        "1"
+        "0-0",
+        "0-0-0",
+        "0-0-1",
+        "0-0-2",
+        "0-0-2-0",
+        "0-0-2-1",
+        "0-0-2-2",
+        "0-0-2-3"
       ],
       "terms_agreed": true,
+      "user_id": 1,
       "id": 1
     },
     {
-      "name": "asddsadsad",
+      "name": "asdsdsda",
       "sector": [
-        "2"
-      ],
-      "terms_agreed": true,
-      "id": 2
-    },
-    {
-      "name": "sadsad",
-      "sector": [
-        "1"
-      ],
-      "terms_agreed": true,
-      "id": 3
-    },
-    {
-      "name": "sdsad",
-      "sector": [
-        "1"
-      ],
-      "id": 5
-    },
-    {
-      "name": "sadsadasdsdsd",
-      "sector": [
+        "0-0",
+        "0-0-0",
         "0-0-1",
+        "0-0-2",
+        "0-0-2-0",
+        "0-0-2-1",
+        "0-0-2-2",
+        "0-0-2-3",
         "0-1",
         "0-1-0",
         "0-1-1",
         "0-1-2"
       ],
       "terms_agreed": true,
-      "id": 6
+      "user_id": 2,
+      "id": 2
+    },
+    {
+      "name": "sdasdsad",
+      "sector": [
+        "0-1",
+        "0-1-0",
+        "0-1-1",
+        "0-1-2"
+      ],
+      "terms_agreed": true,
+      "user_id": 1,
+      "id": 3
+    },
+    {
+      "name": "sdasdsadasd",
+      "sector": [
+        "0-0-0",
+        "0-1",
+        "0-1-0",
+        "0-1-1",
+        "0-1-2"
+      ],
+      "terms_agreed": true,
+      "user_id": 1,
+      "id": 4
     }
   ]
 }

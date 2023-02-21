@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onFinish = (values) => {
-    let url = `/login?email=${values.email}&password=${values.password}`;
+    let url = `/user?email=${values.email}&password=${values.password}`;
     api
       .get(url)
       .then((res) => {

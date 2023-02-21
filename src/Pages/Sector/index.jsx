@@ -4,16 +4,22 @@ import { EditFilled, DeleteFilled, DatabaseFilled } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../Utils/api";
 import { toast } from "react-toastify";
+import nextId from "react-id-generator";
+
+import sectorData from "../../Utils/sectorData.json";
 
 function Index(props) {
   const [list, setList] = useState([]);
   const navigate = useNavigate();
 
+  const userData = JSON.parse(localStorage.getItem("userData"));
+
   const getList = async () => {
+    let url = `/list?user_id=${userData.id}`;
+
     api
-      .get("/list")
+      .get(url)
       .then((res) => {
-        console.log(res.data);
         setList(res.data);
       })
       .catch((error) => {
@@ -50,6 +56,32 @@ function Index(props) {
       dataIndex: "sector",
       key: "sector",
       width: "20%",
+      render: (row) => {
+        let result = [];
+        row.forEach((element) => {
+          let arr = element.split("-");
+
+          let node = sectorData;
+          let len = arr.length;
+          for (let i = 1; i + 1 < len; ++i) {
+            node = node[parseInt(arr[i])].children;
+          }
+          result.push(node[parseInt(arr[len - 1])].title);
+        });
+
+        return result.map((item) => (
+          <Tag
+            key={nextId()}
+            color="orange"
+            style={{
+              fontSize: 12,
+              margin:2
+            }}
+          >
+            {item}
+          </Tag>
+        ));
+      },
     },
     {
       title: "Terms Agreed",
