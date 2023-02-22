@@ -44,18 +44,19 @@ function Index(props) {
       title: "ID",
       dataIndex: "id",
       key: "id",
+      width: "5%"
     },
     {
       title: "Name",
       dataIndex: "name",
       key: "name",
-      width: "20%",
+      width: "10%",
     },
     {
       title: "Sector",
       dataIndex: "sector",
       key: "sector",
-      width: "20%",
+      width: "65%",
       render: (row) => {
         let result = [];
         row.forEach((element) => {
@@ -87,7 +88,7 @@ function Index(props) {
       title: "Terms Agreed",
       dataIndex: "terms_agreed",
       key: "terms_agreed",
-      width: "20%",
+      width: "5%",
       render: (row) => {
         let text = row ? "Agreed" : "Disagreed";
         let colors = row ? "green" : "red";
