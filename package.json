@@ -19,7 +19,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:server": "npx json-server data/db.json --port 8000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
