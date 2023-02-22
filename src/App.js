@@ -8,6 +8,8 @@ import SectorCreate from "./Pages/Sector/Create";
 import SectorEdit from "./Pages/Sector/Edit";
 import ProtectedRoute from "./Routes/ProtectedRoute";
 
+import NotFound from "./Pages/NotFound";
+
 function App() {
   return (
     <Routes>
@@ -45,6 +47,7 @@ function App() {
           </ProtectedRoute>
         }
       />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
